@@ -43,7 +43,6 @@ public class BlindInputState: GameState {
             guard !self.playerMarks.contains(position) else { return }
             addMarkCommand(at: position)
         }
-        //print("Player \(player) turn is completed")
         self.isCompleted = true
     }
     
