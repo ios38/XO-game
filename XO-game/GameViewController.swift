@@ -55,7 +55,7 @@ class GameViewController: UIViewController {
     private func goToFirstState() {
         switch gameMode {
         case .blindly:
-            goToBlintInputState(with: .first)
+            goToBlindInputState(with: .first)
         default:
             goToPlayerInputState(with: .first)
         }
@@ -82,7 +82,7 @@ class GameViewController: UIViewController {
                 }
                 return
             }
-            goToBlintInputState(with: .second)
+            goToBlindInputState(with: .second)
             
         default:
             if let winner = referee.determineWinner() {
@@ -125,8 +125,8 @@ class GameViewController: UIViewController {
                                              markViewPrototype: player.markViewPrototype)
     }
 
-    private func goToBlintInputState(with player: Player) {
-        currentState = BlintInputState(player: player,
+    private func goToBlindInputState(with player: Player) {
+        currentState = BlindInputState(player: player,
                                              gameViewController: self,
                                              gameboard: self.gameboard,
                                              gameboardView: self.gameboardView)

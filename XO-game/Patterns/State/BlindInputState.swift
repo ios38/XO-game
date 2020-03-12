@@ -1,5 +1,5 @@
 //
-//  BlintInputState.swift
+//  BlindInputState.swift
 //  XO-game
 //
 //  Created by Maksim Romanov on 11.03.2020.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class BlintInputState: GameState {
+public class BlindInputState: GameState {
     
     public private(set) var isCompleted = false    
     public let player: Player
